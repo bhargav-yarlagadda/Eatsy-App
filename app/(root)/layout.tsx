@@ -12,7 +12,7 @@ export default function Layout({
   }>) {
     return (
       <div className="px-2 py-2">
-        <div className="px-8">
+        <div className="md:px-8">
         <Navbar/>
         </div>
         {
