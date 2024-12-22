@@ -7,7 +7,7 @@ const Navbar = () => {
   const { data: session } = useSession();
 
   return (
-    <nav className="flex items-center justify-between p-4 bg-gray-900 text-white shadow-md rounded-lg">
+    <nav className="flex items-center justify-between p-4 bg-blue-950 text-white shadow-md rounded-lg">
       <div className="flex items-center space-x-8">
         <Link href="/" className="text-2xl font-bold text-indigo-500 hover:text-indigo-400 transition-colors duration-300">
           Eatsy

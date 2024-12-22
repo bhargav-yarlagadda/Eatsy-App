@@ -11,8 +11,10 @@ export default function Layout({
     children: React.ReactNode;
   }>) {
     return (
-      <div className="px-8 py-2">
+      <div className="px-2 py-2">
+        <div className="px-8">
         <Navbar/>
+        </div>
         {
             children
         }
