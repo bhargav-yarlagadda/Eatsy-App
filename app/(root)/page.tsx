@@ -1,4 +1,5 @@
 "use client";
+import GoogleMapView from "@/components/Home/GoogleMapView";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import { useEffect } from "react";
@@ -23,7 +24,7 @@ const page = () => {
               <SelectRating onRatingChange={()=>{}} />
         </div>
         <div className="col-span-3 bg-blue-400">
-        second
+        <GoogleMapView/>
         </div>
       </div>
   );
