@@ -1,24 +1,22 @@
 import Navbar from "@/components/Navbar";
 import { Metadata } from "next";
-export const metadata:Metadata={
-    title:'Eatsy | Home'
-}
 
+import { UserLocationContextProvider } from "@/context/userLocationContext";
+export const metadata: Metadata = {
+  title: "Eatsy | Home",
+};
 
 export default function Layout({
-    children,
-  }: Readonly<{
-    children: React.ReactNode;
-  }>) {
-    return (
-
-        <div className="md:px-8">
-        <Navbar/>
-        {
-          children
-        }
-        </div>
- 
-    );
-  }
-  
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <UserLocationContextProvider>
+      <div className="md:px-8">
+        <Navbar />
+        {children}
+      </div>
+    </UserLocationContextProvider>
+  );
+}
